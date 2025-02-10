@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "strona-glowna"
+    label: "Strona Główna"
+    files:
+      - label: "Sekcja Powitalna"
+        name: "welcome"
+        file: "index.html"
+        fields:
+          - { label: "Tytuł", name: "welcome-title", widget: "string" }
+          - { label: "Tekst powitalny", name: "welcome-text", widget: "text" }
+      - label: "Stopka"
+        name: "footer"
+        file: "index.html"
+        fields:
+          - { label: "Tekst w stopce", name: "footer-text", widget: "string" }
